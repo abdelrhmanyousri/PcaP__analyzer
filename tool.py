@@ -65,12 +65,9 @@ sorted_hosts = []
 sorted_hosts_num_ports=[]
 
 for key, value in sorted(number_of_ports.iteritems(), key=lambda (k,v): (v,k)):   #rearranging the dict num of ports based on values
-	#print "%s: %s " % (key, value)
 	sorted_hosts.append(key)
 	sorted_hosts_num_ports.append(value)
 
-#for i in range(len(sorted_hosts)):
-	#print "%s : %s  : %s : %s :%s" % (sorted_hosts[i],sorted_hosts_num_ports[i],open_ports[sorted_hosts[i]],protocols[sorted_hosts[i]],os_version[sorted_hosts[i]])	
 
 
 
