@@ -1,22 +1,25 @@
-#PcaP__analyzer
+# PcaP__analyzer
 
 analyazing pcap  files and get  Host IP, Operating System, Open Ports, Identified Protocols.
 
-###Prerequisites
+### Prerequisites
 
+python 2.7 
+install scapy from here [here](https://scapy.readthedocs.io/en/latest/installation.html)
+install prettytable form [here](https://pypi.org/project/PrettyTable/)
 
-
-###how to use
+### how to use ?
 
 you just download it from github and run it `python tool.py`
 
 it will ask you for the pcap file , then you should write the full directory .
 
-###Output 
+### Output 
+
 A table of four columns Host IP , Operating system , open ports and Identified protocols ordered based on the number of open ports on each host.
 
 
-###Example of use 
+### Example of use 
 	
 	 
 	python tool.py
