@@ -5,7 +5,9 @@ analyazing pcap  files and get  Host IP, Operating System, Open Ports, Identifie
 ### Prerequisites
 
 python 2.7 
+
 install scapy from here [here](https://scapy.readthedocs.io/en/latest/installation.html)
+
 install prettytable form [here](https://pypi.org/project/PrettyTable/)
 
 ### how to use ?
