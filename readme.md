@@ -12,9 +12,8 @@ install prettytable form [here](https://pypi.org/project/PrettyTable/)
 
 ### how to use ?
 
-you just download it from github and run it `python tool.py`
+you just download it from github and run it `python tool.py <input_file_directory>`
 
-it will ask you for the pcap file , then you should write the full directory .
 
 ### Output 
 
@@ -24,9 +23,8 @@ A table of four columns Host IP , Operating system , open ports and Identified p
 ### Example of use 
 	
 	 
-	python tool.py
-	please enter the file directory 
-	/home/yousri/Downloads/sample.pcap
+	python tool.py /home/yousri/test.pcap
+	
 	+-----------------+------------------+------------+----------------------+
 	|     Host ip     | Operating system | open ports | Identified Protocols |
 	+-----------------+------------------+------------+----------------------+
