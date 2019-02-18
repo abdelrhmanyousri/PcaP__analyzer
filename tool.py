@@ -40,7 +40,8 @@ for i in hosts:												#loop through all host ips
 	protocol_set = set()									#temp set to save protocols for every host
 	for j in range(len(sample)):							#loop through all packets
 		if IP in sample[j]:
-			protocol_set.add(sample[j][IP].proto)			#adding protocols to the temp set
+			if i == sample[j][IP].src or i == sample[j][IP].dst: 
+				protocol_set.add(sample[j][IP].proto)			#adding protocols to the temp set
 			if i == sample[j][IP].src:						
 				if TCP in sample[j]:						#adding ports to the temp set .....
 					port_set.add(sample[j][TCP].sport)
