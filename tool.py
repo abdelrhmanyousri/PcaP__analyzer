@@ -2,15 +2,24 @@
 import sys
 import os
 from scapy.all import *
-import socket
 from protocols import iana_protocols
 from os_detection import os_detect 
 from prettytable import PrettyTable
+import argparse
 
+parser = argparse.ArgumentParser()
+parser.add_argument("file", nargs='?', default="check_string_for_empty" , help="the pcap file directory")
+args = parser.parse_args()
+if args.file == 'check_string_for_empty':
+	print ('please enter the file directory')
+	exit(2)
+elif args.file.endswith('.pcap') == False:
+	print ('please enter a pcap file')
+	exit(2)
+else:
+	file_input =args.file
 
-
-
-file_input = raw_input("please enter the file directory \n")  		
+  		
 
 sample = rdpcap(file_input)									#read pcap file
 
